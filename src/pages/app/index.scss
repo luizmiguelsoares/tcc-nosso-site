@@ -1,0 +1,52 @@
+
+
+body{
+
+
+background-color: rgb(25, 25, 25);
+
+
+
+  .pagina-inicial{
+  .cabecalho{
+  color: #fff;   
+  font-family: 'Montserrat'; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  }
+  .pt2{
+    display: flex;
+    align-items: flex-start;  
+    gap: 20px;
+  }
+   .slogan{
+    color: #fff;
+    font-family: 'montserrat';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+  
+   .texto1{
+ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .texto2{
+ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+
+
+
+
+
+  }
+
+
+}
