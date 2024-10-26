@@ -1,32 +1,28 @@
 import './index.scss';
+import Card from '@mui/material/Card';
+
+
 
 function App() {
   return (
     <div className="pagina-inicial">
       <div className='cabecalho'>
-        <img className='logo' src="./assets/images/sise´s.jpg" alt="" />
+        <img className='logo' src="./assets/images/sise´s.jpg" alt="Logo" />
         <h2 className='sobre'>
           <a className='clana' href="#sobre-nos">sobre nós</a>
         </h2>
         <h2 className='contato'>contato</h2>
-        <h2 className=' feedback'>feedback</h2>
+        <h2 className='feedback'>feedback</h2>
       </div>
+
       <div className='slogan'>
-        <h1>
-          Empresa Desenvolvedora de Web’s Sites
-        </h1>
-        <h3>
-          Expêriencia no Desenvolvimento de Web’s Sites para o Aprimoramento de seu Negócio
-        </h3>
+        <h1>Empresa Desenvolvedora de Web’s Sites</h1>
+        <h3>Experiência no Desenvolvimento de Web’s Sites para o Aprimoramento de seu Negócio</h3>
         <div className='seta'>
-          <img src="./assets/images/seta-direita.png" alt="" />
-
-
-          <h4>
-            Sites 100% responsívos Desenvolvimento feito apartir de suas necessidades
-          </h4>
+          <img className='arrow' src="./assets/images/seta-direita.png" alt="Seta" />
+          <h4>Sites 100% responsivos Desenvolvimento feito a partir de suas necessidades</h4>
         </div>
-        <div className=' texto'>
+        <div className='texto'>
           <h1 className='titulo'>INICIO</h1>
           <p>
             Nós entendemos que um site bem projetado é crucial para a visibilidade e o crescimento do seu negócio.<br />
@@ -63,17 +59,30 @@ function App() {
           </p>
         </div>
 
-
         <div className='projetos'>
-          <h1 className='titulo'>projetos</h1>
-
+          <h1 className='titulo'>projeto em destaque!!!</h1>
         </div>
+        <Card className="card" sx={{ maxWidth: 400, margin: '20px auto' }}>
+        <div className="card-image">
+          <img
+            src="assets/images/image.webp" // Caminho da imagem
+            alt="Logo Venus"
+            className="image"
+          />
+        </div>
+        <div className="card-content">
+          <h5 className="card-title">VENUS</h5>
+          <p className="card-description">
+           Venus foi o primeiro projeto criado pela sizes
+          </p>
+        </div>
+      </Card>
+            
       </div>
+      
+
       <div className='texto3'>
-
         <div className='redes-sociais'>
-
-
           <div className='icones'>
             <div className='wha'>
               <h3>contato</h3>
@@ -81,28 +90,21 @@ function App() {
             </div>
             <div className='parte-2'>
               <h3>Siga-nos nas redes sociais!</h3>
-              <div className='insta'>             
-                <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
+              <div className='insta'>
                 <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+                  <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
                 </a>
                 <a href="https://www.instagram.com/yluiz19" target="_blank" rel="noopener noreferrer">
                   <img className='ico' src="./assets/images/instagram.png" alt="Instagram" />
                 </a>
               </div>
-
-
-
             </div>
             <div className='ultimo'>
-              <img className='log' src="./assets/images/sise´s.jpg" alt="" />
+              <img className='log' src="./assets/images/sise´s.jpg" alt="Logo" />
             </div>
-
           </div>
-
-
         </div>
       </div>
-
     </div>
   );
 }
