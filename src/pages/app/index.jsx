@@ -70,22 +70,38 @@ function App() {
         </div>
       </div>
       <div className='texto3'>
-  <div className='rodape'>
-    <h1>contato</h1>
-    <img className='whatsap' src="./assets/images/whatsapp.png" alt="WhatsApp" />
+
+        <div className='redes-sociais'>
+
+
+          <div className='icones'>
+            <div className='wha'>
+              <h3>contato</h3>
+              <img className='whatsap' src="./assets/images/whatsapp.png" alt="WhatsApp" />
+            </div>
+            <div className='parte-2'>
+              <h3>Siga-nos nas redes sociais!</h3>
+              <div className='insta'>             
+                <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
+                <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="https://www.instagram.com/yluiz19" target="_blank" rel="noopener noreferrer">
+                  <img className='ico' src="./assets/images/instagram.png" alt="Instagram" />
+                </a>
+              </div>
+
+
+
+            </div>
+            <div className='ultimo'>
+              <img className='log' src="./assets/images/sise´s.jpg" alt="" />
+            </div>
+
+          </div>
+
+
+        </div>
       </div>
-  <div className='redes-sociais'>
-    <h3>Siga-nos nas redes sociais!</h3>
-    <div className='icones'>
-      <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener noreferrer">
-        <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/yluiz19" target="_blank" rel="noopener noreferrer">
-        <img className='ico' src="./assets/images/instagram.png" alt="Instagram" />
-      </a>
-    </div>
-  </div>
-</div>
 
     </div>
   );
