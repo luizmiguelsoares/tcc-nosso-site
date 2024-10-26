@@ -6,19 +6,29 @@ body {
 
 
   .pagina-inicial {
+
     .cabecalho {
       .logo{
         height: 30px;
         width: 30px;
+        padding: 30px;
       }
+    .clana{
+      text-decoration: none; /* Remove o sublinhado dos links */
+      color: #fff;
+
+    }
+      
       color: #000000;
       font-family: 'Montserrat';
       display: flex;
       align-items: center;
-      gap: 40px;
-      padding: 30px;
-      background-color: #1d1d1d;
-      box-shadow: 0 2px 4px rgba(3, 3, 3, 3); /* Sombra */
+      gap: 50px;
+      background-color: #000000;
+      box-shadow: 0 1px 4px rgba(3, 3, 3, 3); /* Sombra */
+      position: sticky; // ou fixed, conforme sua preferência
+      top: 0;
+      z-index: 1000;
 
 
       .inicio {
@@ -36,6 +46,9 @@ body {
         color: #fff;
         font-size: 1.5rem;
         transition: transform 0.3s;
+        html {
+          scroll-behavior: smooth;
+        }        
       }
 
       .sobre:hover {
@@ -139,15 +152,34 @@ body {
               transform: scale(1.1);
             }
           }
-          
+         
           
         }
       }
       
-
+      .rodape {
+        display: flex;
+        justify-content: left;
+        text-align: left; // Alinhamento à esquerda
+        gap: 30px;
+        h1 {
+          font-size: 1.5em;
+          margin: 5px 0;
+        }
+      }
+  
+      
+      .logo-rodape {
+        width: 50px; /* Ajuste o tamanho conforme necessário */
+        position: absolute;
+        right: 20px; /* Espaçamento do lado direito */
+        bottom: 20px; /* Espaçamento do fundo */
+      }
+      
 
 
     }
+    
 
     .whatsap {
       height: 30px;

@@ -5,9 +5,11 @@ function App() {
     <div className="pagina-inicial">
       <div className='cabecalho'>
         <img className='logo' src="./assets/images/sise´s.jpg" alt="" />
-        <h3 className='sobre'>sobre nós</h3>
-        <h3 className='contato'>contato</h3>
-        <h3 className=' feedback'>feedback</h3>
+        <h2 className='sobre'>
+          <a className='clana' href="#sobre-nos">sobre nós</a>
+        </h2>
+        <h2 className='contato'>contato</h2>
+        <h2 className=' feedback'>feedback</h2>
       </div>
       <div className='slogan'>
         <h1>
@@ -41,7 +43,7 @@ function App() {
             Acreditamos que a colaboração com nossos clientes é fundamental para alcançar os melhores resultados.<br />
             Por isso, estamos sempre abertos a feedbacks e sugestões, assegurando que o resultado final não apenas atenda, mas supere suas expectativas.
           </p>
-          <h1 className='titulo'>SOBRE NÓS</h1>
+          <h1 className='titulo' id="sobre-nos">SOBRE NÓS</h1>
           <p>
             Nossa missão é transformar ideias em realidade através do desenvolvimento de websites impactantes.<br />
             Com uma equipe de profissionais dedicados e apaixonados, buscamos constantemente inovações que tragam valor real ao seu negócio.<br />
@@ -60,29 +62,31 @@ function App() {
             Com nossa expertise e sua visão, podemos criar algo verdadeiramente extraordinário.
           </p>
         </div>
-       
+
 
         <div className='projetos'>
           <h1 className='titulo'>projetos</h1>
 
         </div>
       </div>
-      <div className='texto3 '>
-        <h1>contato</h1>
-
-        <img className='whatsap' src="./assets/images/whatsapp.png" alt="" />
-        <div className='redes-sociais'>
-          <h3>Siga-nos nas redes sociais!</h3>
-          <div className='icones'>
-            <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener noreferrer">
-              <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/seu-perfil" target="_blank" rel="noopener noreferrer">
-              <img className='ico' src="./assets/images/instagram.png" alt="Instagram" />
-            </a>
-          </div>
-        </div>
+      <div className='texto3'>
+  <div className='rodape'>
+    <h1>contato</h1>
+    <img className='whatsap' src="./assets/images/whatsapp.png" alt="WhatsApp" />
       </div>
+  <div className='redes-sociais'>
+    <h3>Siga-nos nas redes sociais!</h3>
+    <div className='icones'>
+      <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+        <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/yluiz19" target="_blank" rel="noopener noreferrer">
+        <img className='ico' src="./assets/images/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }
