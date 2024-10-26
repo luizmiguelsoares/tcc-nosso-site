@@ -248,6 +248,10 @@ body {
           }
 
           .contato-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
            .img,.whatsap{
             height: 30px;
             width: 30px;
