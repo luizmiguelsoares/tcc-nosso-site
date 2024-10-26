@@ -93,9 +93,16 @@ function App() {
           <div className='icones'>
             <div className='contato-section' id="contato">
               <h1>Contato</h1>
-              <p>Entre em contato conosco através <br /> das redes sociais ou WhatsApp.</p>
-              <img className='whatsap' src="./assets/images/whatsapp.png" alt="WhatsApp" />
-            </div>
+              <p>Entre em contato conosco através <br /> das redes sociais ou WhatsApp. <br />
+              </p>
+              <div className='numero'>         
+                     <a href="https://api.whatsapp.com/send?phone=5511991673629" target="_blank" rel="noopener noreferrer">
+                    <img className='whatsap' src="./assets/images/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <span className='span' >(11) 99167-3629</span>
+                </div>
+
+                            </div>
             <div className='parte-2'>
               <h3>Siga-nos nas redes sociais!</h3>
               <div className='insta'>

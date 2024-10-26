@@ -226,6 +226,18 @@ body {
               transform: scale(1.1);
             }
           }
+         .numero{
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap: 10px;
+         }
+
+          .span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 
           .contato-section{
            .img,.whatsap{
