@@ -1,22 +1,33 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { useState } from 'react'; 
+import { useEffect, useState } from 'react'; 
+import axios from 'axios';
 
 function Feedback() {
     const [feedback, setFeedback] = useState('');
+    const [cadastrar, setCadastrar] = useState(null); // Estado para armazenar dados
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             event.preventDefault();
-            setFeedback(''); 
+            handleSubmit();
         }
     };
 
-    const handleSubmit = () => {
-       
-        console.log('Feedback enviado:', feedback); 
-        setFeedback(''); 
+
+    const handleSubmit = async () => {
+        const url = 'http://localhost:5010/feedback';
+        try {
+            await axios.post(url, { feedback }); // Envie o feedback
+            console.log('Feedback enviado:', feedback); 
+            alert('Feedback enviado com sucesso!'); 
+            setFeedback(''); 
+        } catch (error) {
+            console.error("Erro ao enviar feedback:", error);
+            alert('Erro ao enviar feedback. Tente novamente.');
+        }
     };
+
 
     return (
         <div className='pagina-feedback'>
