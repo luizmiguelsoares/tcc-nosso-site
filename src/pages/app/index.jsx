@@ -1,5 +1,6 @@
 import './index.scss';
 import Card from '@mui/material/Card';
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,8 +12,11 @@ function App() {
         <h2 className='sobre'>
           <a className='clana' href="#sobre-nos">sobre nós</a>
         </h2>
-        <h2 className='contato'>contato</h2>
-        <h2 className='feedback'>feedback</h2>
+        <h2 className='contato'>
+          <a className='cont' href="#contato">contato</a>
+        </h2>
+
+        <Link className='link' to="./feedback"> <h2 className='feedback'>feedback</h2></Link>
       </div>
 
       <div className='slogan'>
@@ -63,32 +67,33 @@ function App() {
           <h1 className='titulo'>projeto em destaque!!!</h1>
           <img className='setabaixo' src="./assets/images/seta-para-baixo.png" alt="" />
 
-          
+
         </div>
         <Card className="card" sx={{ maxWidth: 400, margin: '20px auto' }}>
-        <div className="card-image">
-          <img
-            src="assets/images/image.webp" // Caminho da imagem
-            alt="Logo Venus"
-            className="image"
-          />
-        </div>
-        <div className="card-content">
-          <h5 className="card-title">VENUS</h5>
-          <p className="card-description">
-           Venus foi o primeiro projeto criado pela sizes
-          </p>
-        </div>
-      </Card>
-            
+          <div className="card-image">
+            <img
+              src="assets/images/image.webp" // Caminho da imagem
+              alt="Logo Venus"
+              className="image"
+            />
+          </div>
+          <div className="card-content">
+            <h5 className="card-title">VENUS</h5>
+            <p className="card-description">
+              Venus foi o primeiro projeto criado pela sizes
+            </p>
+          </div>
+        </Card>
+
       </div>
-      
+
 
       <div className='texto3'>
         <div className='redes-sociais'>
           <div className='icones'>
-            <div className='wha'>
-              <h3>contato</h3>
+            <div className='contato-section' id="contato">
+              <h1>Contato</h1>
+              <p>Entre em contato conosco através <br /> das redes sociais ou WhatsApp.</p>
               <img className='whatsap' src="./assets/images/whatsapp.png" alt="WhatsApp" />
             </div>
             <div className='parte-2'>
