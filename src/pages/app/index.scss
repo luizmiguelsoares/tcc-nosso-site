@@ -2,6 +2,33 @@ body {
   background-color: rgb(255, 255, 255);
 
   .pagina-inicial {
+
+  .projetos{
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+   .setabaixo{
+    height: 30px;
+    width: 30px;
+   }
+
+
+  }
+
+    .card{
+      color: #fff;
+      font-size: 1.0rem;
+      transition: transform 0.5s;
+
+  }
+
+  .card:hover {
+      transform: scale(1.1);
+      color: #ffffff;
+  }
+
  
     .card {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

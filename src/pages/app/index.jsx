@@ -61,6 +61,9 @@ function App() {
 
         <div className='projetos'>
           <h1 className='titulo'>projeto em destaque!!!</h1>
+          <img className='setabaixo' src="./assets/images/seta-para-baixo.png" alt="" />
+
+          
         </div>
         <Card className="card" sx={{ maxWidth: 400, margin: '20px auto' }}>
         <div className="card-image">
