@@ -103,15 +103,17 @@ body {
 
     .cabecalho {
       display: flex;
-      flex-wrap: wrap;
-      padding: 10px;
+      padding: 15px;
+      align-items: center;
+      justify-content: center;
       background-color: #000000;
       color: #fff;
       position: sticky;
       top: 0;
       z-index: 1000;
-      gap: 30px; 
+      gap: 20px; 
       box-shadow: 0 1px 4px rgba(3, 3, 3, 3); /* Sombra */
+
       .cont{
         text-decoration: none;
         color: #fff;
