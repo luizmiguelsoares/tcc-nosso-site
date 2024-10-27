@@ -106,7 +106,7 @@ function App() {
 
                             </div>
             <div className='parte-2'>
-              <h3>Siga-nos nas redes sociais!</h3>
+              <h3 className='insta'>Siga-nos nas redes sociais!</h3>
               <div className='insta'>
                 <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener noreferrer">
                   <img className='ico' src="./assets/images/facebook.png" alt="Facebook" />
@@ -117,7 +117,7 @@ function App() {
               </div>
             </div>
             <div className='ultimo'>
-              <img className='log' src="./assets/images/sise´s.jpg" alt="Logo" />
+              <img src="./assets/images/sise´s.jpg" alt="Logo" />
             </div>
           </div>
         </div>

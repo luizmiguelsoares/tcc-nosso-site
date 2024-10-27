@@ -86,12 +86,18 @@ body {
     @media (max-width: 600px) {
         .pagina-feedback {
             .cabecario {
-                flex-direction: column;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
                 align-items: flex-start; /* Alinhar elementos no início */
             }
 
             .seta {
                 margin-right: 0; /* Remover margem em telas menores */
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .input {

@@ -3,56 +3,57 @@ body {
 
   .pagina-inicial {
 
-  .projetos{
-    display: flex;
-    gap: 20px;
-    margin: 30px;
-    flex-direction: column;
-    align-items: center;
-   .setabaixo{
-    height: 30px;
-    width: 30px;
-   }
+    .projetos {
+      display: flex;
+      gap: 20px;
+      margin: 30px;
+      flex-direction: column;
+      align-items: center;
+
+      .setabaixo {
+        height: 30px;
+        width: 30px;
+      }
 
 
-  }
+    }
 
-    .card{
+    .card {
       color: #fff;
       font-size: 1.0rem;
       transition: transform 0.5s;
 
-  }
+    }
 
-  .card:hover {
+    .card:hover {
       transform: scale(1.1);
       color: #ffffff;
-  }
+    }
 
- 
+
     .card {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
-    
-  
-    
+
+
+
     .image {
       width: 300px;
       height: auto;
       border-radius: 3px;
-   
+
     }
-    
+
     .card-content {
       padding: 16px;
     }
-    
+
     .card-title {
       margin-bottom: 8px;
       font-size: 1.25rem;
     }
-    
+
     .card-description {
       color: gray;
     }
@@ -60,35 +61,39 @@ body {
 
 
 
-    .contato{
+    .contato {
       color: #fff;
       font-size: 1.5rem;
       transition: transform 0.3s;
-      
-  }
 
-  .contato:hover {
+    }
+
+    .contato:hover {
       transform: scale(1.2);
       color: #ffffff;
-  }
-  .sobre{
-    color: #fff;
-    font-size: 1.5rem;
-    transition: transform 0.3s;
-}
+    }
 
-.sobre:hover {
-    transform: scale(1.2);
-    color: #db4545;
-}
-    .clana{
+    .sobre {
+      color: #fff;
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .sobre:hover {
+      transform: scale(1.2);
+      color: #db4545;
+    }
+
+    .clana {
       text-decoration: none;
       color: #fff;
     }
-    .cont{
+
+    .cont {
       text-decoration: none;
       color: #fff;
     }
+
     .seta {
       display: flex;
       flex-direction: row;
@@ -108,37 +113,38 @@ body {
       background-color: #000000;
       color: #fff;
       top: 0;
-      gap: 20px; 
-      box-shadow: 0 1px 4px rgba(3, 3, 3, 3); /* Sombra */
-    
-      .cont{
+      gap: 20px;
+      box-shadow: 0 1px 4px rgba(3, 3, 3, 3);
+      /* Sombra */
+
+      .cont {
         text-decoration: none;
         color: #fff;
       }
-    
-      .link{
+
+      .link {
         text-decoration: none;
         color: #fff;
       }
- 
+
       .logo {
         height: 80px; // Diminuído
         width: 80px; // Diminuído
         margin-right: auto;
       }
 
-  
 
-        h2 {
-          text-align: center;
-          font-size: 1.2rem;
-          transition: transform 0.3s;
 
-          &:hover {
-            transform: scale(1.1);
-          }
+      h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
         }
-      
+      }
+
     }
 
     .slogan {
@@ -152,12 +158,13 @@ body {
       h3 {
         margin: 10px 0;
       }
-      .pro{
+
+      .pro {
         display: flex;
         flex-direction: row;
         gap: 30px;
         margin: 30px;
-      }    
+      }
     }
 
     .texto {
@@ -171,24 +178,32 @@ body {
       background-color: #000000;
       color: #fff;
       padding: 20px;
-      box-shadow: 0 1px 10px rgba(3, 3, 3, 3); /* Sombra */
+      box-shadow: 0 1px 10px rgba(3, 3, 3, 3);
+      /* Sombra */
 
- 
+
 
       .redes-sociais {
         display: flex;
         flex-direction: column;
         align-items: center;
-         .ultimo{
+
+
+        .ultimo {
+          position: fixed;
+          /* ou absolute, dependendo do efeito desejado */
+          bottom: 10px;
+          /* distância do fundo da página */
+          left: 10px;
+          /* distância do lado esquerdo da página */
           display: flex;
           justify-content: left;
-          align-items: center;
-
-        .log {
           width: 50px;
           height: 50px;
+          margin-left: 0;
+
+
         }
-      }
 
         .icones {
           display: flex;
@@ -200,26 +215,30 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-           .h3,.parte-2{
-            display: flex;
-            justify-content: center;
-           }
 
-           .insta{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap :10px;
-           }
+            .h3,
+            .parte-2 {
+              display: flex;
+              justify-content: center;
+            }
+
+            .insta {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              gap: 10px;
+            }
 
           }
-          .ico{
+
+          .ico {
             display: flex;
             gap: 10px;
             height: 30px;
             width: 30px;
           }
-          .whatsap{
+
+          .whatsap {
             width: 30px;
             height: 30px;
             align-items: center;
@@ -232,38 +251,42 @@ body {
               transform: scale(1.1);
             }
           }
-         .numero{
-          display: flex;
-          justify-content: center;
-          flex-direction: row;
-          gap: 10px;
-         }
 
-          .span{
+          .numero {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+          }
+
+          .span {
             display: flex;
             align-items: center;
             justify-content: center;
           }
 
-          .contato-section{
+          .contato-section {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-           .img,.whatsap{
-            height: 30px;
-            width: 30px;
-            
-           }
-            .wha{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-           
-        }
-        }
 
-      
+            .img,
+            .whatsap {
+              height: 30px;
+              width: 30px;
+
+            }
+
+            .wha {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+
+            }
+          }
+
+
         }
       }
     }
@@ -274,8 +297,8 @@ body {
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
-    
-   
+
+
     }
 
     .slogan h1 {
