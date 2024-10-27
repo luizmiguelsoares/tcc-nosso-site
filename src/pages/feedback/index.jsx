@@ -1,11 +1,11 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react'; 
+import { useState } from 'react'; 
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 function Feedback() {
     const [feedback, setFeedback] = useState('');
-    const [cadastrar, setCadastrar] = useState(null); // Estado para armazenar dados
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
@@ -14,20 +14,22 @@ function Feedback() {
         }
     };
 
-
     const handleSubmit = async () => {
         const url = 'http://localhost:5010/feedback';
         try {
             await axios.post(url, { feedback }); // Envie o feedback
-            console.log('Feedback enviado:', feedback); 
-            alert('Feedback enviado com sucesso!'); 
-            setFeedback(''); 
+            console.log('Feedback enviado:', feedback);
+            
+            // Mostrar a mensagem de sucesso após o envio do feedback
+            Swal.fire("Seu feedback foi enviado com sucesso!", "", "success");
+
+            setFeedback(''); // Limpar o campo de feedback
         } catch (error) {
             console.error("Erro ao enviar feedback:", error);
-            alert('Erro ao enviar feedback. Tente novamente.');
+            // Mostrar a mensagem de erro
+            Swal.fire("Erro ao enviar feedback!", "Tente novamente.", "error");
         }
     };
-
 
     return (
         <div className='pagina-feedback'>
