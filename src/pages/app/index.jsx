@@ -8,15 +8,17 @@ function App() {
   return (
     <div className="pagina-inicial">
       <div className='cabecalho'>
+        
         <img className='logo' src="./assets/images/sise´s.jpg" alt="Logo" />
+        <div className='bora'>
         <h2 className='sobre'>
           <a className='clana' href="#sobre-nos">sobre nós</a>
         </h2>
         <h2 className='contato'>
           <a className='cont' href="#contato">contato</a>
         </h2>
-
         <Link className='link' to="./feedback"> <h2 className='feedback'>feedback</h2></Link>
+        </div>
       </div>
 
       <div className='slogan'>
