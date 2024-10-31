@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="pagina-inicial">
+    <div  className="pagina-inicial">
       <div className='cabecalho'>
         
         <img className='logo' src="./assets/images/sise´s.jpg" alt="Logo" />
