@@ -17,7 +17,6 @@ function App() {
         <h2 className='contato'>
           <a className='cont' href="#contato">contato</a>
         </h2>
-        <Link className='link' to="./feedback"> <h2 className='feedback'>feedback</h2></Link>
         </div>
       </div>
 
@@ -74,7 +73,7 @@ function App() {
         <Card className="card" sx={{ maxWidth: 400, margin: '20px auto' }}>
           <div className="card-image">
             <img
-              src="assets/images/image.webp" // Caminho da imagem
+              src="assets/images/image.webp" 
               alt="Logo Venus"
               className="image"
             />
